@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: #424242;
+}
+
+/***************** nav bar *************************/
+
+nav {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: #fff;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo img {
+    height: 18px;
+    aspect-ratio: auto;
+    cursor: pointer;
+}
+
+.other-links,
+.links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.links li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 3px;
+}
+
+/********************* main section *******************/
+
+main {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero {
+    width: 1100px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 17vh;
+}
+
+.landing-img img {
+    width: auto;
+    height: 45vh;
+}
+
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.landing-content h1 {
+    font-weight: 500;
+    font-size: 2.8rem;
+}
+
+.landing-content p {
+    font-size: 1.3rem;
+}
+
+.signup-btn {
+    margin-top: 3rem;
+}
+
+.signup-btn button {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(75, 134, 212);
+    padding: .8rem 2rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.signup-btn button:hover {
+    background-color: #000;
+}
+
+/****************** calculator ***************************/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    border: 2px solid black;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+}
+
+.container button {
+    padding: .8rem 2rem;
+    background-color: rgb(75, 134, 212);
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input {
+    height: 30px;
+    width: 150px;
+    padding: 0 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.output {
+    height: 30px;
+    width: 150px;
+    padding: 0 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
