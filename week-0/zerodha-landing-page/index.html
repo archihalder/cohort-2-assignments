@@ -48,23 +48,26 @@
         </div>
         <div class="container">
             <h3>Interest Calculator</h3>
-            <form>
-                <label for="amt">Pricipal Amount</label> <br>
-                <input type="text" id="amt"> <br>
+            <div class="data">
+                <form class="in">
+                    <label for="amt">Pricipal Amount</label> <br>
+                    <input type="text" id="amt"> <br>
 
-                <label for="rate">Rate of Interest</label> <br>
-                <input type="text" id="rate"> <br>
+                    <label for="rate">Rate of Interest</label> <br>
+                    <input type="text" id="rate"> <br>
 
-                <label for="year">Years</label> <br>
-                <input type="text" id="year"> <br>
+                    <label for="year">Years</label> <br>
+                    <input type="text" id="year">
+                </form>
+                <div class="out">
+                    <p>Interest Amount</p>
+                    <div class="output" id="iamt"></div>
 
-                <p>Interest Amount</p>
-                <div class="output" id="iamt"></div>
-
-                <p>Total Amount</p>
-                <div class="output" id="tamt"></div>
-            </form>
-            <button id="calculate">Calculate</button>
+                    <p>Total Amount</p>
+                    <div class="output" id="tamt"></div>
+                </div>
+            </div>
+            <button ton id="calculate">Calculate</button>
         </div>
     </main>
 

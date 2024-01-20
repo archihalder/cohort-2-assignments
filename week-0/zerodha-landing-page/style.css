@@ -113,7 +113,8 @@ main {
     margin-top: 3rem;
 }
 
-.signup-btn button {
+.signup-btn button,
+.container button {
     font-size: 1.2rem;
     font-weight: 500;
     color: #fff;
@@ -124,50 +125,57 @@ main {
     cursor: pointer;
 }
 
-.signup-btn button:hover {
+.signup-btn button:hover,
+.container button:hover {
     background-color: #000;
 }
 
 /****************** calculator ***************************/
 
 .container {
+    width: 500px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 3px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 1rem;
-    margin-bottom: 4rem;
-    border: 2px solid black;
-    padding: 1rem 3rem;
-    border-radius: 1rem;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin: 4rem 0;
 }
 
-.container button {
-    padding: .8rem 2rem;
-    background-color: rgb(75, 134, 212);
-    color: #fff;
-    border: none;
+.container h3 {
     font-weight: 500;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 1.3rem;
 }
 
+.data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.output,
 input {
+    width: 200px;
     height: 30px;
-    width: 150px;
-    padding: 0 5px;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: 16px;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 3px;
+    margin: .5rem 0;
+    padding: 0 10px;
+    font-size: .9rem;
 }
 
 .output {
-    height: 30px;
-    width: 150px;
-    padding: 0 5px;
-    border: 1px solid black;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
+    padding-top: 4px;
+}
+
+.output:focus,
+input:focus {
+    outline: none !important;
+    border-color: rgb(75, 134, 212);
+}
+
+.container button {
+    width: 180px;
 }
