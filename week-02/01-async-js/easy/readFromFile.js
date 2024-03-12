@@ -9,9 +9,10 @@ fs.readFile("sample.txt", "utf-8", (err, data) => {
     console.log(data);
 })
 
+const start = performance.now();
 let i = 0;
-for (i = 0; i < 1000000000; i++) {
+for (i = 0; i < 10000000000; i++) {
     i += 1;
 }
-
-console.log(i);
+const end = performance.now();
+console.log(`Time taken ${end - start} ms`);
