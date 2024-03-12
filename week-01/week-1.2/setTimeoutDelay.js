@@ -1,12 +1,9 @@
 // Calculate the time it takes between setTimeout call and the inner function actually running
 
-const timeout = 1000; // 1000 milliseconds -> 1 second
+const start = performance.now();
+const timeDelay = 1000; // in ms
 
-function delayedFunction() {
-    const endTime = performance.now();
-    const elapsedTime = endTime - startTime;
-    console.log(`Delayed function executed after ${elapsedTime} milliseconds`);
-}
-
-const startTime = performance.now();
-setTimeout(delayedFunction, timeout);
+setTimeout(function () {
+    const end = performance.now();
+    console.log(`Inner function executed after ${end - start - timeDelay} ms`);
+}, timeDelay);
